@@ -44,15 +44,6 @@ footer .logo img{background:#fff;border-radius:6px;padding:4px}
 
 /* Preserve the complete images on narrow screens. */
 @media(max-width:767px){
-  .hero-image{
-    min-height:0;
-    aspect-ratio:3 / 2;
-    border-radius:0;
-    background-color:#e7ebee;
-    background-size:100% 100%,contain;
-    background-repeat:no-repeat;
-    background-position:center;
-  }
   .service-card img,.segment-card img{
     object-fit:contain;
     object-position:center;
