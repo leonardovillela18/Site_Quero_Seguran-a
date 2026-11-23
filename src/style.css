@@ -70,3 +70,31 @@ footer .logo img{background:#fff;border-radius:6px;padding:4px}
 .contact-location .map-frame{margin:0;height:290px}
 .contact-diagnostic{justify-self:start;margin-top:10px;white-space:normal;text-align:center}
 @media(max-width:767px){.contact-location .map-frame{height:240px}}
+
+/* Contact panels share the same surface and visual hierarchy. */
+.contact-content{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:stretch;gap:24px}
+.contact-info,.contact-location{background:#fff;border:1px solid #e7e9ec;border-radius:18px;box-shadow:0 4px 18px #1018270b}
+.contact-info{padding:28px;align-content:start;gap:0}
+.contact-panel-heading h3{font-size:22px;letter-spacing:-.5px;margin:0 0 6px}
+.contact-panel-heading p,.contact-action p{font-size:14px;line-height:1.5;color:#647080;margin:0}
+.contact-panel-heading{margin-bottom:16px}
+.contact-card{border:0;border-top:1px solid #edf0f2;border-radius:0;padding:16px 0}
+.contact-card:hover{transform:none;box-shadow:none;background:#fafbfc}
+.contact-icon{width:46px;height:46px}
+.contact-action{margin-top:8px;padding-top:20px;border-top:1px solid #edf0f2}
+.contact-action strong{display:block;font-size:15px;margin-bottom:4px}
+.contact-diagnostic{margin-top:16px}
+.contact-location{display:flex;flex-direction:column;overflow:hidden;gap:0}
+.contact-location .map-frame{border-radius:0;height:250px;flex:none}
+.contact-location .contact-addresses{background:#fff;color:#101827;border-radius:0;padding:24px 28px}
+.contact-location .contact-addresses h3{font-size:20px;margin-bottom:8px}
+.contact-location .contact-addresses h3 svg{color:#d5a500}
+.contact-location .contact-addresses a{color:#4d5968;font-size:14px;padding:12px 0}
+.contact-location .contact-addresses a+a{border-top:1px solid #edf0f2}
+.contact-location .contact-addresses a span{color:#987600}
+@media(max-width:767px){
+  .contact-content{grid-template-columns:1fr;gap:16px}
+  .contact-info{padding:22px}
+  .contact-location .map-frame{height:240px}
+  .contact-location .contact-addresses{padding:22px}
+}

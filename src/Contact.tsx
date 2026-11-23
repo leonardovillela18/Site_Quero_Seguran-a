@@ -11,10 +11,11 @@ export function Contact(){
   <div className="contact-heading"><span>FALE CONOSCO</span><h2>Vamos proteger o que realmente importa.</h2><p>Conte para nossa equipe o que você precisa. Estamos prontos para encontrar a solução ideal para o seu patrimônio.</p></div>
   <div className="contact-content">
    <div className="contact-info">
+    <div className="contact-panel-heading"><h3>Fale com a nossa equipe</h3><p>Escolha o canal de sua preferência.</p></div>
     <a className="contact-card" href={company.whatsapp} target="_blank" rel="noreferrer"><span className="contact-icon"><WhatsAppIcon/></span><span><small>WHATSAPP</small><strong>{company.phone}</strong><em>Converse com nossa equipe</em></span><ArrowRight/></a>
     <a className="contact-card" href={company.instagram} target="_blank" rel="noreferrer"><span className="contact-icon"><InstagramIcon/></span><span><small>INSTAGRAM</small><strong>@queroseguranca</strong><em>Acompanhe nossas novidades</em></span><ArrowRight/></a>
     <button className="contact-card" type="button" onClick={()=>navigator.clipboard.writeText(company.email).then(()=>{setCopied(true);setTimeout(()=>setCopied(false),3000)}).catch(()=>window.prompt('Copie o e-mail:',company.email))}><span className="contact-icon"><Mail/></span><span><small>E-MAIL</small><strong>{company.email}</strong><em>{copied?'E-mail copiado!':'Clique para copiar o e-mail'}</em></span><ArrowRight/></button>
-    <a className="button contact-diagnostic" href="#contato" data-diagnostic>Entre em contato conosco <ArrowRight size={17}/></a>
+    <div className="contact-action"><div><strong>Precisa de uma solução sob medida?</strong><p>Conte para nós o que você deseja proteger.</p></div><a className="button contact-diagnostic" href="#contato" data-diagnostic>Entre em contato conosco <ArrowRight size={17}/></a></div>
    </div>
    <div className="contact-location">
     <div className="map-frame"><iframe title="Mapa da matriz Quero Segurança em Ituverava" loading="lazy" referrerPolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Avenida%20Doutor%20Paulo%20Borges%20de%20Oliveira%201615%20Ituverava&t=&z=15&ie=UTF8&iwloc=&output=embed"/></div>
