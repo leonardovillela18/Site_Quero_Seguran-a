@@ -60,3 +60,9 @@ footer .logo img{background:#fff;border-radius:6px;padding:4px}
   }
   .client-logo{overflow:visible}
 }
+
+@media(min-width:768px){
+  .segment-grid{grid-template-columns:repeat(8,minmax(0,1fr))}
+  .segment-grid>.segment-item{grid-column:span 2}
+  .segment-grid>.segment-item:nth-child(5){grid-column:2 / span 2}
+}
