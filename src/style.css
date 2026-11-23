@@ -66,3 +66,7 @@ footer .logo img{background:#fff;border-radius:6px;padding:4px}
   .segment-grid>.segment-item{grid-column:span 2}
   .segment-grid>.segment-item:nth-child(5){grid-column:2 / span 2}
 }
+.contact-location{display:grid;gap:12px;min-width:0}
+.contact-location .map-frame{margin:0;height:290px}
+.contact-diagnostic{justify-self:start;margin-top:10px;white-space:normal;text-align:center}
+@media(max-width:767px){.contact-location .map-frame{height:240px}}
